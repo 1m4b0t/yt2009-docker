@@ -39,11 +39,11 @@ jobs:
       - name: Commit update
         if: ${{ steps.update.outputs.previous != steps.update.outputs.version }}
         run: |
-          git add cobalt
+          git add yt2009
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git commit -am "dep(cobalt): update to version ${{ steps.update.outputs.version }}"
+          git commit -am "dep(yt2009): update to version ${{ steps.update.outputs.version }}"
           git tag ${{ steps.update.outputs.version }} && git push && git push --tags
 
   publish:
