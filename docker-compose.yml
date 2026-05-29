@@ -1,0 +1,12 @@
+services:
+  yt2009:
+    image: ghcr.io/1m4b0t/yt2009-docker:latest
+    container_name: yt2009
+    ports:
+      - "8080:80"
+    environment:
+      - YT2009_ENV=dev
+      - YT2009_AUTO_MAINTAIN=true
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
