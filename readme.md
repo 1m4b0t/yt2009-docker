@@ -1,5 +1,5 @@
 # automated docker builds of yt2009
-### this repo is an adaptation of [ben-pearce/cobalt-web](https://github.com/ben-pearce/cobalt-web) to make automated docker images for [ftde0/yt2009](https://github.com/ftde0/yt2009)
+### this repo is an adaptation of [ben-pearce/cobalt-web](https://github.com/ben-pearce/cobalt-web) to make automated docker images of [ftde0/yt2009](https://github.com/ftde0/yt2009)
 
 ---
 
